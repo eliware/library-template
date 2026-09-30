@@ -1,113 +1,117 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-## @eliware/module-template [![license](https://img.shields.io/github/license/eliware/module-template.svg)](LICENSE)[![build status](https://github.com/eliware/module-template/actions/workflows/nodejs.yml/badge.svg)](https://github.com/eliware/module-template/actions)
-
-Documentation: [docs](docs/README.md) · [specifications](specs/README.md) · [examples](examples/README.md) · [release notes](RELEASE_NOTES.md)
-
-> A module-template for Node.js (Insert Brief Description)
-
----
+## @eliware/library-template [![npm version](https://img.shields.io/npm/v/@eliware/library-template.svg)](https://www.npmjs.com/package/@eliware/library-template) [![license](https://img.shields.io/github/license/eliware/library-template.svg)](LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yml)
 
 ## Table of Contents
 
 - [Features](#features)
 - [Requirements](#requirements)
-- [Installation](#installation)
+- [Setup](#setup)
 - [Usage](#usage)
-  - [ESM Example](#esm-example)
-- [API](#api)
-- [TypeScript](#typescript)
-- [Errors / Troubleshooting](#errors--troubleshooting)
 - [Development](#development)
+- [Testing](#testing)
+- [Troubleshooting](#troubleshooting)
 - [Security](#security)
+- [API](#api)
+- [Packaging](#packaging)
+- [Examples](#examples)
 - [Support](#support)
 - [License](#license)
 - [Links](#links)
 
 ## Features
 
-- Minimal ESM package structure for new Node.js libraries
-- Jest, coverage, lint, TypeScript, and package validation scripts
-- Public entrypoint, declarations, README, license, and safe example layout
+Purpose: @eliware/library-template provides a baseline structure and example API for derived packages.
+
+The package description is: A reusable starting point for Eliware Node.js libraries using native ESM.
+
+- Provides a small, tested native ESM library surface.
+- Includes public declarations, examples, documentation, and release notes.
+- Uses shared validation scripts and an explicit package contents allowlist.
+
+Maintained by Eliware <eliware@eliware.org>. Author: Eliware <eliware@eliware.org>. License: MIT. See [LICENSE](LICENSE).
+
+Documentation: [docs](docs/README.md) · [specifications](specs/README.md) · [examples](examples/README.md)
 
 ## Requirements
 
-- Node.js 26 or newer
+- Node.js 26.x with native ESM support.
+- No environment variables or runtime configuration files are required.
 
 ## Setup
 
-```bash
-npm install @eliware/module-template
-```
+Run npm install @eliware/library-template to install the package. This checkout declares version 9.0.0 in package.json; verify the exact release in the npm registry before installing that version. The public runtime entrypoint is src/index.mjs and declarations are in index.d.ts.
+
+### Configuration
+
+This starter API has no runtime settings, environment variables, or configuration files. Derived libraries should document any runtime configuration introduced by their API; package metadata and deployment settings are not runtime configuration.
 
 ## Usage
 
-### ESM Example
+Import the public function from @eliware/library-template:
 
 ```js
-// Example for ESM (module JS) usage
+import { createGreeting } from "@eliware/library-template";
+console.log(createGreeting("Eli"));
 ```
 
-## API
-
-### method1 signature
-
-description
-
-### method2 signature
-
-description
-
-... etc ...
-
-## TypeScript
-
-Type definitions are included:
-
-```ts
-
-```
-
-## Testing
-
-Run the documented test, lint, typecheck, and package checks during template
-validation.
-
-## Troubleshooting
-
-This repository is a starting template, not a complete application. Replace placeholder API text and examples before publishing a specialized module. Keep runtime exports, declarations, tests, and README synchronized.
+Prerequisites: Node.js 26 and an ESM project with the package installed.
+Command: node examples/basic.mjs.
+Expected result: the command prints Hello, Eli!.
+The package entrypoint is src/index.mjs; declarations are in index.d.ts. Check the npm registry to confirm the release or publication of version 9.0.0; package metadata does not confirm it.
 
 ## Development
 
-```bash
-npm test
-npm run test:gaps
-npm run lint
-npm run typecheck
-npm run pack
-```
+Read AGENTS.md, docs/README.md, and specs/README.md before changing the package. Source modules live under src/ and tests mirror them under tests/. Replace the sample API and metadata when creating a derived library.
 
-Customize package metadata, API behavior, tests, and documentation before using this as a production library.
+## Testing
+
+Run `npm test` for aggregate validation and coverage. Use `npm run lint`, `npm run audit`, `npm run format:check`, `npm run typecheck`, and `npm run pack` for the applicable focused checks. `npm run format` writes formatted files; `npm run format:check` is read-only.
+
+## Troubleshooting
+
+Use Node.js 26 and update tests, declarations, examples, and API documentation together when changing the public API.
 
 ## Security
 
-Keep examples credential-free and do not add secrets, `.env` files, private URLs, or credentials to the template. Review dependencies and package contents before distributing a derived module.
+The starter API uses no credentials, environment variables, or network services. Do not add secrets or private machine-specific values to source, tests, examples, or package contents.
+
+## API
+
+The public entrypoint exports createGreeting(name?: string): string. It returns a greeting and uses world when the name is omitted.
+
+## Packaging
+
+The intentional package allowlist is src/, index.d.ts, README.md, docs/, examples/, specs/, LICENSE, and RELEASE_NOTES.md.
+
+Validate packed contents with npm run pack; the shared pack check must pass and the packed files must match the allowlist before release consideration.
+
+Public publication uses npm provenance and an exact version tag matching package.json after Ubuntu validation. Verify the exact version in the npm registry after an explicitly authorized publication handoff.
+
+## Examples
+
+The runnable example and its prerequisites are indexed in examples/README.md. Start with the basic example, which uses no credentials or external services.
 
 ## Support
 
-For help, questions, or to chat with the author and community, visit:
-
-[![Discord](https://eliware.org/logos/discord_96.png)](https://discord.gg/M6aTR9eTwN)[![eliware.org](https://eliware.org/logos/eliware_96.png)](https://discord.gg/M6aTR9eTwN)
+[![Discord](https://eliware.org/logos/discord_96.png)](https://discord.gg/M6aTR9eTwN)
 
 **[eliware.org on Discord](https://discord.gg/M6aTR9eTwN)**
 
+Use the [Eliware Discord community](https://discord.gg/M6aTR9eTwN), [GitHub issues](https://github.com/eliware/library-template/issues), or [eliware@eliware.org](mailto:eliware@eliware.org). Include the relevant API or example and a concise description of the issue when requesting help.
+
 ## License
 
-[MIT © 2025 Eli Sterling, eliware.org](LICENSE)
+MIT. See [LICENSE](LICENSE).
 
 ## Links
 
-- [Home Page](https://eliware.org)
-- [GitHub](https://github.com/eliware/module-template)
-- [npm](https://www.npmjs.com/package/@eliware/module-template)
-- [Discord](https://discord.gg/M6aTR9eTwN)
+- [Eliware home](https://eliware.org)
+- [Eliware GitHub organization](https://github.com/eliware)
+- [GitHub repository](https://github.com/eliware/library-template)
+- [npm package](https://www.npmjs.com/package/@eliware/library-template)
+- [Documentation](docs/README.md)
+- [Specifications](specs/README.md)
+- [Canonical repository profile specifications](https://github.com/eliware/test/blob/main/specs/conventions/README.md)
+- [Runnable examples](examples/README.md)
+- [Release notes](RELEASE_NOTES.md)

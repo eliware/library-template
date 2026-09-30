@@ -1,18 +1,15 @@
 # Examples
 
-The [example module](example.mjs) is the runnable library example.
+Purpose: the [basic.mjs](basic.mjs) example demonstrates the public createGreeting API.
 
 ## Prerequisites
 
-Use Node.js 26 in an ESM-capable project.
+Use Node.js 26 in an ESM-capable project with @eliware/library-template installed.
 
 ## Command
 
-```bash
-node examples/example.mjs
-```
+node examples/basic.mjs
 
 ## Expected result
 
-The example imports the template entrypoint and demonstrates the public API
-without credentials or external services.
+The example prints Hello, Eli! and uses no credentials or external services.

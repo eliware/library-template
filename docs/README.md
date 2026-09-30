@@ -1,15 +1,11 @@
 # Documentation
 
-This directory is reserved for end-user documentation for projects derived from
-`@eliware/module-template`. The root [README](../README.md) contains the
-template's setup, API, example, validation, and support guidance.
+This directory contains end-user guidance for @eliware/library-template.
 
 ## Contents
 
+- [Usage guide](usage.md)
 - [Root README](../README.md)
-- [Examples index](../examples/README.md)
+- [Specifications](../specs/README.md)
+- [Examples](../examples/README.md)
 - [Release notes](../RELEASE_NOTES.md)
-
-## Validation
-
-Keep links current and add each new end-user document to this index.

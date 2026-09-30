@@ -1,6 +1,6 @@
-import { myModule } from '../index.mjs';
-import { test, expect } from '@jest/globals';
+import { expect, test } from "@jest/globals";
+import { createGreeting } from "../src/index.mjs";
 
-test('myModule returns expected string', () => {
-  expect(myModule()).toBe('Hello from template ESM');
+test("exports the public greeting function", () => {
+  expect(createGreeting("Eliware")).toBe("Hello, Eliware!");
 });

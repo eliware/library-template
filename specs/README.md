@@ -1,8 +1,7 @@
 # Specifications
 
-Repository authority: [authority.json](authority.json). Shared directive index:
-[directives.json](directives.json).
+This directory indexes the repository's applicable shared profiles and local package contract.
 
-This template applies the shared `general` and `library` profiles. Derived
-projects should add repository-specific structured specifications here without
-copying the shared convention files.
+- [Applicable directives](directives.json)
+- [Project README](../README.md)
+- [Public API documentation](../docs/README.md)

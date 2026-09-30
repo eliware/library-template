@@ -1,89 +1,97 @@
 {
-  "name": "@eliware/module-template",
+  "name": "@eliware/library-template",
+  "version": "9.0.0",
+  "private": false,
+  "description": "A reusable starting point for Eliware Node.js libraries using native ESM.",
+  "author": "Eliware <eliware@eliware.org>",
+  "license": "MIT",
   "type": "module",
-  "version": "1.1.0",
-  "description": "A Node.js module-template.",
-  "types": "index.d.ts",
-  "files": [
-    "index.mjs",
-    "index.d.ts",
-    "README.md",
-    "LICENSE",
-    "examples"
-  ],
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./index.mjs"
-    }
-  },
-  "scripts": {
-    "test": "npx --node-options=\"--experimental-vm-modules --no-warnings\" jest --detectOpenHandles --silent --coverage",
-    "test:gaps": "npm test 2>&1 | grep '|' | grep -vF '|     100 |      100 |     100 |     100 |'",
-    "lint": "npx oxlint .",
-    "typecheck": "tsc --project tsconfig.json",
-    "pack": "npm pack --dry-run"
+  "engines": {
+    "node": ">=26 <27"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eliware/module-template.git"
-  },
-  "keywords": [
-    "nodejs",
-    "module",
-    "template",
-    "boilerplate",
-    "javascript",
-    "typescript",
-    "esm",
-    "package",
-    "library",
-    "npm",
-    "testing",
-    "jest",
-    "ci",
-    "continuous-integration",
-    "node"
-  ],
-  "author": "Eli Sterling, eliware.org <eli@eliware.org>",
-  "license": "MIT",
-  "eliware": {
-    "apply": [
-      "general",
-      "library"
-    ],
-    "authority": {
-      "authoritativeFor": [
-        "Module template structure and public library example surface."
-      ],
-      "notAuthoritativeFor": [
-        "Shared Eliware policy, operations, and publication authorization."
-      ]
-    },
-    "crosslinks": [
-      {
-        "path": "eliware/conventions",
-        "relationship": "relatedAuthority",
-        "authoritativeFor": "Applicable repository conventions."
-      }
-    ]
+    "url": "https://github.com/eliware/library-template"
   },
   "bugs": {
-    "url": "https://github.com/eliware/module-template/issues"
+    "url": "https://github.com/eliware/library-template/issues"
   },
-  "homepage": "https://github.com/eliware/module-template#readme",
+  "homepage": "https://github.com/eliware/library-template#readme",
+  "keywords": [
+    "eliware",
+    "library",
+    "template",
+    "nodejs",
+    "esm"
+  ],
+  "main": "./src/index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "files": [
+    "src/",
+    "index.d.ts",
+    "README.md",
+    "LICENSE",
+    "RELEASE_NOTES.md",
+    "docs/",
+    "specs/",
+    "examples/"
+  ],
+  "scripts": {
+    "test": "eliware-test",
+    "lint": "eliware-test --lint",
+    "audit": "eliware-test --audit",
+    "format": "eliware-test --format",
+    "format:check": "eliware-test --format-check",
+    "typecheck": "tsc --project tsconfig.json",
+    "pack": "eliware-test --pack"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "devDependencies": {
-    "jest": "^30.4.2",
+    "@eliware/test": "^8.0.0",
     "typescript": "^7.0.2"
   },
   "jest": {
     "testEnvironment": "node",
     "testMatch": [
-      "**/?(*.)+(spec|test).[jt]s?(x)",
-      "**/?(*.)+(spec|test).mjs"
+      "**/tests/**/*.test.mjs"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.mjs"
+    ],
+    "coverageReporters": [
+      "text",
+      "json-summary"
     ]
   },
-  "dependencies": {
-    "@eliware/common": "^1.1.7"
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "proseWrap": "preserve",
+    "endOfLine": "lf"
+  },
+  "eliware": {
+    "apply": [
+      "general",
+      "library",
+      "npm-published"
+    ]
   }
 }

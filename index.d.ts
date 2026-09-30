@@ -1,2 +1,1 @@
-// Type declarations placeholder
-export function myModule(): string;
+export function createGreeting(name?: string): string;

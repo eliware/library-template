@@ -1,21 +1,9 @@
 # Release Notes
 
-## Unreleased
+## 9.0.0 — 2026-09-30
 
 ### Changed
 
-- Updated `@eliware/common` to `^1.1.6`.
-
-## 1.1.0 — 2026-08-07
-
-### Added
-
-- Initial release.
-
-## 1.1.1 — 2026-08-07
-
-### Changed
-
-- Standardized package layout, validation scripts, TypeScript checking, CI, and documentation guidance.
-- Updated `@eliware/common` to 1.1.7.
-- Preserved `.notag`; this template is not released or published.
+- Recreated the repository as a current Eliware library starter.
+- Added mirrored source and test layout, typed public entrypoint, runnable example, and focused documentation.
+- Aligned metadata, validation scripts, package contents, CI, and Knit deployment configuration with v9 conventions.
