@@ -1,7 +1,7 @@
 # Specifications
 
-This directory indexes the repository's applicable shared profiles and local package contract.
+This directory indexes the template's local package contract and supporting documentation.
 
-- [Applicable directives](directives.json)
+- [Package directives](directives.json)
 - [Project README](../README.md)
 - [Public API documentation](../docs/README.md)
