@@ -108,7 +108,8 @@ MIT. See [LICENSE](LICENSE).
 
 - [Eliware home](https://eliware.org)
 - [Eliware GitHub organization](https://github.com/eliware)
-- [GitHub repository](https://github.com/eliware/library-template)
+- [Discord](https://discord.gg/M6aTR9eTwN)
+- [GitHub repository](https://github.com/eliware/library-template) (`git+https://github.com/eliware/library-template.git`)
 - [npm package](https://www.npmjs.com/package/@eliware/library-template)
 - [Documentation](docs/README.md)
 - [Specifications](specs/README.md)

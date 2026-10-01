@@ -30,7 +30,7 @@ Preserve the documented public contract and update its specifications, tests, de
 
 ## Library
 
-The public runtime entrypoint is @eliware/library-template, implemented by src/index.mjs; public declarations are in index.d.ts.d.ts`. Keep exports and declarations synchronized and test the public API. Compatibility guidance is provided in the README and release notes. Packaging limits package contents to the documented allowlist. Validate types with `npm run typecheck`, behavior and coverage with `npm test`, and consumer package contents with `eliware-test --pack`or`npm run pack` before release consideration.
+The public runtime entrypoint is `@eliware/library-template`, implemented by `src/index.mjs`; public declarations are in `index.d.ts`. Keep exports and declarations synchronized and test the public API. Compatibility guidance is provided in the README and release notes. Packaging limits package contents to the documented allowlist. Validate types with `npm run typecheck`, behavior and coverage with `npm test`, and consumer package contents with `eliware-test --pack` or `npm run pack` before release consideration.
 
 ## npm publication
 
