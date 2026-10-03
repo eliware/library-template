@@ -96,6 +96,7 @@
     "endOfLine": "lf"
   },
   "eliware": {
+    "id": "E-100",
     "apply": [
       "general",
       "library",
