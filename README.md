@@ -1,6 +1,6 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-## @eliware/library-template [![npm version](https://img.shields.io/npm/v/@eliware/library-template.svg)](https://www.npmjs.com/package/@eliware/library-template) [![license](https://img.shields.io/github/license/eliware/library-template.svg)](LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yml)
+## @eliware/library-template [![npm](https://img.shields.io/npm/v/@eliware/library-template)](https://www.npmjs.com/package/@eliware/library-template) [![License](https://img.shields.io/github/license/eliware/library-template)](https://github.com/eliware/library-template/blob/main/LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yml)
 
 ## Table of Contents
 
@@ -21,17 +21,17 @@
 
 ## Features
 
-Purpose: @eliware/library-template provides a baseline structure and example API for derived packages.
+This template owns its starter library surface and examples; each derived package owns its implementation and public API.
 
-The package description is: A reusable starting point for Eliware Node.js libraries using native ESM.
+Package description: A reusable starting point for Eliware Node.js libraries using native ESM. Author: Eliware <eliware@eliware.org>. License: MIT.
+
+Purpose: @eliware/library-template provides a baseline structure and example API for derived packages.
 
 - Provides a small, tested native ESM library surface.
 - Includes public declarations, examples, documentation, and release notes.
 - Uses shared validation scripts and an explicit package contents allowlist.
 
-Maintained by Eliware <eliware@eliware.org>. Author: Eliware <eliware@eliware.org>. License: MIT. See [LICENSE](LICENSE).
-
-Documentation: [docs](docs/README.md) · [specifications](specs/README.md) · [examples](examples/README.md)
+Documentation: [docs](docs/README.md) · [specifications](specs/README.md)
 
 ## Requirements
 
@@ -40,7 +40,7 @@ Documentation: [docs](docs/README.md) · [specifications](specs/README.md) · [e
 
 ## Setup
 
-Run npm install @eliware/library-template to install the package. This checkout declares version 9.0.0 in package.json; verify the exact release in the npm registry before installing that version. The public runtime entrypoint is src/index.mjs and declarations are in index.d.ts.
+Run npm install @eliware/library-template to install the package. The package.json version reflects this checkout and does not confirm publication. Check the npm registry for the latest published version before installing. The public runtime entrypoint is src/index.mjs and declarations are in index.d.ts.
 
 ### Configuration
 
@@ -58,7 +58,7 @@ console.log(createGreeting("Eli"));
 Prerequisites: Node.js 26 and an ESM project with the package installed.
 Command: node examples/basic.mjs.
 Expected result: the command prints Hello, Eli!.
-The package entrypoint is src/index.mjs; declarations are in index.d.ts. Check the npm registry to confirm the release or publication of version 9.0.0; package metadata does not confirm it.
+The package entrypoint is src/index.mjs; declarations are in index.d.ts. Check the npm registry for the latest published release; package metadata does not confirm publication.
 
 ## Development
 
@@ -106,13 +106,14 @@ MIT. See [LICENSE](LICENSE).
 
 ## Links
 
-- [Eliware home](https://eliware.org)
-- [Eliware GitHub organization](https://github.com/eliware)
+- [docs](docs/README.md)
+- [Home Page](https://github.com/eliware/library-template#readme)
+- [GitHub repository](https://github.com/eliware/library-template.git)
+- [Eliware](https://eliware.org)
+- [GitHub organization](https://github.com/eliware)
 - [Discord](https://discord.gg/M6aTR9eTwN)
-- [GitHub repository](https://github.com/eliware/library-template) (`git+https://github.com/eliware/library-template.git`)
-- [npm package](https://www.npmjs.com/package/@eliware/library-template)
-- [Documentation](docs/README.md)
-- [Specifications](specs/README.md)
-- [Canonical repository profile specifications](https://github.com/eliware/test/blob/main/specs/conventions/README.md)
-- [Runnable examples](examples/README.md)
-- [Release notes](RELEASE_NOTES.md)
+- [Documentation](https://github.com/eliware/docs/blob/main/repo-map.yaml)
+- [specifications](specs/README.md)
+- [Release Notes](RELEASE_NOTES.md)
+
+- [npm Package](https://www.npmjs.com/package/@eliware/library-template)

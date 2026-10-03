@@ -1,13 +1,13 @@
 {
   "name": "@eliware/library-template",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "private": false,
   "description": "A reusable starting point for Eliware Node.js libraries using native ESM.",
   "author": "Eliware <eliware@eliware.org>",
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": ">=26 <27"
+    "node": "26"
   },
   "repository": {
     "type": "git",
@@ -56,7 +56,7 @@
     "provenance": true
   },
   "devDependencies": {
-    "@eliware/test": "^9.0.0",
+    "@eliware/test": "^10.0.0",
     "typescript": "^7.0.2"
   },
   "jest": {
@@ -70,7 +70,15 @@
     "coverageReporters": [
       "text",
       "json-summary"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   },
   "prettier": {
     "printWidth": 100,
