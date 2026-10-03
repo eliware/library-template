@@ -1,6 +1,6 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-## @eliware/library-template [![npm](https://img.shields.io/npm/v/@eliware/library-template)](https://www.npmjs.com/package/@eliware/library-template) [![License](https://img.shields.io/github/license/eliware/library-template)](https://github.com/eliware/library-template/blob/main/LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yml)
+## @eliware/library-template [![npm](https://img.shields.io/npm/v/@eliware/library-template)](https://www.npmjs.com/package/@eliware/library-template) [![License](https://img.shields.io/github/license/eliware/library-template)](https://github.com/eliware/library-template/blob/main/LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yaml)
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ Documentation: [docs](docs/README.md) · [specifications](specs/README.md)
 
 ## Setup
 
-Run npm install @eliware/library-template to install the package. The package.json version reflects this checkout and does not confirm publication. Check the npm registry for the latest published version before installing. The public runtime entrypoint is src/index.mjs and declarations are in index.d.ts.
+Run npm install @eliware/library-template to install the package. The package.json version reflects this checkout and does not confirm publication. Check the npm registry for the latest published version before installing. The public runtime entrypoint is src/index.mjs and declarations are in src/index.d.ts.
 
 ### Configuration
 
@@ -58,7 +58,7 @@ console.log(createGreeting("Eli"));
 Prerequisites: Node.js 26 and an ESM project with the package installed.
 Command: node examples/basic.mjs.
 Expected result: the command prints Hello, Eli!.
-The package entrypoint is src/index.mjs; declarations are in index.d.ts. Check the npm registry for the latest published release; package metadata does not confirm publication.
+The package entrypoint is src/index.mjs; declarations are in src/index.d.ts. Check the npm registry for the latest published release; package metadata does not confirm publication.
 
 ## Development
 
@@ -66,7 +66,7 @@ Read AGENTS.md, docs/README.md, and specs/README.md before changing the package.
 
 ## Testing
 
-Run `npm test` for aggregate validation and coverage. Use `npm run lint`, `npm run audit`, `npm run format:check`, `npm run typecheck`, and `npm run pack` for the applicable focused checks. `npm run format` writes formatted files; `npm run format:check` is read-only.
+Run `npm test` for aggregate validation, coverage, and typechecking. Use `npm run lint`, `npm run audit`, `npm run format:check`, `npm run typecheck`, and `npm run pack` for the applicable focused checks. `npm run format` writes formatted files; `npm run format:check` is read-only.
 
 ## Troubleshooting
 
@@ -82,7 +82,7 @@ The public entrypoint exports createGreeting(name?: string): string. It returns 
 
 ## Packaging
 
-The intentional package allowlist is src/, index.d.ts, README.md, docs/, examples/, specs/, LICENSE, and RELEASE_NOTES.md.
+The package allowlist is src/, docs/, README.md, AGENTS.md, LICENSE, RELEASE_NOTES.md, and examples/.
 
 Validate packed contents with npm run pack; the shared pack check must pass and the packed files must match the allowlist before release consideration.
 

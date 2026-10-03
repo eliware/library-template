@@ -1,0 +1,9 @@
+version: "11.0"
+description: Local requirements for the Eliware library template.
+directives:
+  - id: E-100
+    dos:
+      - Provide a reusable native ESM library starting point with a sample API, declarations, documentation, examples, and release guidance.
+      - Replace template identity, sample API, and package metadata when creating a derived library.
+    donts:
+      - Do not publish the template identity, sample API, or placeholder metadata as a finished library.

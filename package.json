@@ -1,6 +1,6 @@
 {
   "name": "@eliware/library-template",
-  "version": "10.0.0",
+  "version": "11.0.0",
   "private": false,
   "description": "A reusable starting point for Eliware Node.js libraries using native ESM.",
   "author": "Eliware <eliware@eliware.org>",
@@ -25,21 +25,20 @@
     "esm"
   ],
   "main": "./src/index.mjs",
-  "types": "./index.d.ts",
+  "types": "./src/index.d.ts",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
+      "types": "./src/index.d.ts",
       "import": "./src/index.mjs"
     }
   },
   "files": [
     "src/",
-    "index.d.ts",
+    "docs/",
     "README.md",
+    "AGENTS.md",
     "LICENSE",
     "RELEASE_NOTES.md",
-    "docs/",
-    "specs/",
     "examples/"
   ],
   "scripts": {
