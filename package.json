@@ -1,22 +1,8 @@
 {
   "name": "@eliware/library-template",
-  "version": "11.0.0",
-  "private": false,
-  "description": "A reusable starting point for Eliware Node.js libraries using native ESM.",
-  "author": "Eliware <eliware@eliware.org>",
-  "license": "MIT",
+  "version": "12.0.0",
   "type": "module",
-  "engines": {
-    "node": "26"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eliware/library-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/eliware/library-template/issues"
-  },
-  "homepage": "https://github.com/eliware/library-template#readme",
+  "description": "A reusable starting point for Eliware Node.js libraries using native ESM.",
   "keywords": [
     "eliware",
     "library",
@@ -24,14 +10,12 @@
     "nodejs",
     "esm"
   ],
-  "main": "./src/index.mjs",
-  "types": "./src/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./src/index.d.ts",
-      "import": "./src/index.mjs"
-    }
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
+  "main": "./src/index.mjs",
   "files": [
     "src/",
     "docs/",
@@ -39,7 +23,8 @@
     "AGENTS.md",
     "LICENSE",
     "RELEASE_NOTES.md",
-    "examples/"
+    "examples/",
+    "specs/"
   ],
   "scripts": {
     "test": "eliware-test",
@@ -50,9 +35,8 @@
     "typecheck": "tsc --project tsconfig.json",
     "pack": "eliware-test --pack"
   },
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
+  "engines": {
+    "node": ">=26"
   },
   "devDependencies": {
     "@eliware/test": "^11.0.0",
@@ -94,6 +78,16 @@
     "proseWrap": "preserve",
     "endOfLine": "lf"
   },
+  "author": "Eliware <eliware@eliware.org>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliware/library-template.git"
+  },
+  "homepage": "https://github.com/eliware/library-template#readme",
+  "bugs": {
+    "url": "https://github.com/eliware/library-template/issues"
+  },
   "eliware": {
     "id": "E-100",
     "apply": [
@@ -101,5 +95,12 @@
       "library",
       "npm-published"
     ]
+  },
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs"
+    }
   }
 }

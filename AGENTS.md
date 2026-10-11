@@ -2,7 +2,7 @@
 
 ## Project
 
-Repository: `eliware/library-template`. Purpose: maintain `@eliware/library-template`, a Node.js 26 starter for libraries using native ESM.
+Repository: `eliware/library-template`. Purpose: maintain `@eliware/library-template`, a Node.js 26 or later starter for libraries using native ESM.
 
 ## Scope and boundaries
 
@@ -20,7 +20,9 @@ Read this file, `README.md`, and applicable documentation and specifications bef
 
 ## Validation
 
-Use Node.js 26, native ESM `.mjs` modules, and npm. The library has no runtime environment settings or configuration files; runtime behavior is controlled by API options. Run `npm ci` after dependency changes and `npm test` for aggregate validation and coverage. Use `npm run lint`, `npm run audit`, `npm run format:check`, `npm run typecheck`, and `npm run pack` for focused validation. `npm run format` writes files; use `npm run format:check` for read-only formatting validation.
+Use `npm run lint`, `npm run audit`, `npm run format`, and `npm run format:check` as needed.
+
+Use Node.js 26 or later, native ESM `.mjs` modules, and npm. The library has no runtime environment settings or configuration files; runtime behavior is controlled by API options. Run `npm ci` after dependency changes and `npm test` for aggregate validation and coverage. Use `npm run lint`, `npm run audit`, `npm run format:check`, `npm run typecheck`, and `npm run pack` for focused validation. `npm run format` writes files; use `npm run format:check` for read-only formatting validation.
 
 ## Security
 

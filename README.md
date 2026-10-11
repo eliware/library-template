@@ -1,6 +1,8 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-@eliware/library-template [![npm](https://img.shields.io/npm/v/@eliware/library-template)](https://www.npmjs.com/package/@eliware/library-template) [![License](https://img.shields.io/github/license/eliware/library-template)](https://github.com/eliware/library-template/blob/main/LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yaml)
+## @eliware/library-template [![npm](https://img.shields.io/npm/v/@eliware/library-template)](https://www.npmjs.com/package/@eliware/library-template) [![License](https://img.shields.io/github/license/eliware/library-template)](https://github.com/eliware/library-template/blob/main/LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yaml)
+
+A reusable starting point for Eliware Node.js libraries using native ESM.
 
 ## Table of Contents
 
@@ -16,14 +18,12 @@
 - [Packaging](#packaging)
 - [Examples](#examples)
 - [Support](#support)
-- [License](#license)
 - [Links](#links)
+- [License](#license)
 
 ## Features
 
 This template owns its starter library surface and examples; each derived package owns its implementation and public API.
-
-Package description: A reusable starting point for Eliware Node.js libraries using native ESM. Author: Eliware <eliware@eliware.org>. License: MIT.
 
 Purpose: @eliware/library-template provides a baseline structure and example API for derived packages.
 
@@ -35,7 +35,7 @@ Documentation: [docs](docs/README.md) · [specifications](specs/README.md)
 
 ## Requirements
 
-- Node.js 26.x with native ESM support.
+- Node.js 26 or later with native ESM support.
 - No environment variables or runtime configuration files are required.
 
 ## Setup
@@ -55,10 +55,12 @@ import { createGreeting } from "@eliware/library-template";
 console.log(createGreeting("Eli"));
 ```
 
-Prerequisites: Node.js 26 and an ESM project with the package installed.
+Prerequisites: Node.js 26 or later and an ESM project with the package installed.
 Command: node examples/basic.mjs.
 Expected result: the command prints Hello, Eli!.
 The package entrypoint is src/index.mjs; declarations are in src/index.d.ts. Check the npm registry for the latest published release; package metadata does not confirm publication.
+
+Read [RELEASE_NOTES.md](RELEASE_NOTES.md) for release history.
 
 ## Development
 
@@ -70,7 +72,7 @@ Run `npm test` for aggregate validation, coverage, and typechecking. Use `npm ru
 
 ## Troubleshooting
 
-Use Node.js 26 and update tests, declarations, examples, and API documentation together when changing the public API.
+Use Node.js 26 or later and update tests, declarations, examples, and API documentation together when changing the public API.
 
 ## Security
 
@@ -90,28 +92,25 @@ Public publication uses npm provenance and an exact version tag matching package
 
 ## Examples
 
-The runnable example and its prerequisites are indexed in examples/README.md. Start with the basic example, which uses no credentials or external services.
+The runnable example and its prerequisites are indexed in [examples/README.md](examples/README.md). Start with the basic example, which uses no credentials or external services.
 
 ## Support
 
-[![Discord](https://eliware.org/logos/discord_96.png)](https://discord.gg/M6aTR9eTwN)
+For help, questions, or to chat with the author and community, visit:
+
+[![Discord](https://eliware.org/logos/discord_96.png)](https://discord.gg/M6aTR9eTwN)[![eliware.org](https://eliware.org/logos/eliware_96.png)](https://discord.gg/M6aTR9eTwN)
 
 **[eliware.org on Discord](https://discord.gg/M6aTR9eTwN)**
 
-Use the [Eliware Discord community](https://discord.gg/M6aTR9eTwN), [GitHub issues](https://github.com/eliware/library-template/issues), or [eliware@eliware.org](mailto:eliware@eliware.org). Include the relevant API or example and a concise description of the issue when requesting help.
+## Links
+
+- [Home Page](https://eliware.org)
+- [GitHub Org](https://github.com/eliware)
+- [GitHub Repo](https://github.com/eliware/library-template)
+- [Bug Reports](https://github.com/eliware/library-template/issues)
+- [npm](https://www.npmjs.com/package/@eliware/library-template)
+- [Discord](https://discord.gg/M6aTR9eTwN)
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
-
-## Links
-
-- [docs](docs/README.md)
-- [Home Page](https://github.com/eliware/library-template#readme)
-- [GitHub repository](https://github.com/eliware/library-template.git)
-- [Eliware](https://eliware.org)
-- [GitHub organization](https://github.com/eliware)
-- [Discord](https://discord.gg/M6aTR9eTwN)
-- [specifications](specs/README.md)
-- [Release Notes](RELEASE_NOTES.md)
-- [npm Package](https://www.npmjs.com/package/@eliware/library-template)
+[MIT © Eliware](LICENSE)
