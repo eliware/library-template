@@ -23,76 +23,54 @@ A reusable starting point for Eliware Node.js libraries using native ESM.
 
 ## Features
 
-This template owns its starter library surface and examples; each derived package owns its implementation and public API.
-
-Purpose: @eliware/library-template provides a baseline structure and example API for derived packages.
-
-- Provides a small, tested native ESM library surface.
-- Includes public declarations, examples, documentation, and release notes.
-- Uses shared validation scripts and an explicit package contents allowlist.
-
-Documentation: [docs](docs/README.md) · [specifications](specs/README.md)
+This template provides a reusable starting point. Each derived repository owns its product behavior and operating decisions.
 
 ## Requirements
 
-- Node.js 26 or later with native ESM support.
-- No environment variables or runtime configuration files are required.
+Use Node.js 26 or later and npm 12 or later for repository validation.
 
 ## Setup
 
-Run npm install @eliware/library-template to install the package. The package.json version reflects this checkout and does not confirm publication. Check the npm registry for the latest published version before installing. The public runtime entrypoint is src/index.mjs and declarations are in src/index.d.ts.
-
-### Configuration
-
-This starter API has no runtime settings, environment variables, or configuration files. Derived libraries should document any runtime configuration introduced by their API; package metadata and deployment settings are not runtime configuration.
+Create a repository from this template. Replace the template name, description, URLs, keywords, and sample content.
+Run `npm ci` from the repository root.
 
 ## Usage
 
-Import the public function from @eliware/library-template:
-
-```js
-import { createGreeting } from "@eliware/library-template";
-console.log(createGreeting("Eli"));
-```
-
-Prerequisites: Node.js 26 or later and an ESM project with the package installed.
-Command: node examples/basic.mjs.
-Expected result: the command prints Hello, Eli!.
-The package entrypoint is src/index.mjs; declarations are in src/index.d.ts. Check the npm registry for the latest published release; package metadata does not confirm publication.
-
-Read [RELEASE_NOTES.md](RELEASE_NOTES.md) for release history.
+Follow this README and the [user guide](docs/README.md). Read [release notes](RELEASE_NOTES.md) for release history.
 
 ## Development
 
-Read AGENTS.md, docs/README.md, and specs/README.md before changing the package. Source modules live under src/ and tests mirror them under tests/. Replace the sample API and metadata when creating a derived library.
+Read [AGENTS.md](AGENTS.md) and [the specifications index](specs/README.md) before you change files.
+Keep documents and records in the repository that owns them.
+Read [release notes](RELEASE_NOTES.md) for release history.
 
 ## Testing
 
-Run `npm test` for aggregate validation, coverage, and typechecking. Use `npm run lint`, `npm run audit`, `npm run format:check`, `npm run typecheck`, and `npm run pack` for the applicable focused checks. `npm run format` writes formatted files; `npm run format:check` is read-only.
+Run `npm test` before handoff. It runs the repository checks through `eliware-test`.
 
 ## Troubleshooting
 
-Use Node.js 26 or later and update tests, declarations, examples, and API documentation together when changing the public API.
+Install the required Node.js and npm versions. Run `npm ci` after dependency changes.
+Review the file and rule in any validation error.
 
 ## Security
 
-The starter API uses no credentials, environment variables, or network services. Do not add secrets or private machine-specific values to source, tests, examples, or package contents.
+Keep credentials, secrets, private data, and runtime state out of Git.
+Use only approved secret stores for secret values.
 
 ## API
 
-The public entrypoint exports createGreeting(name?: string): string. It returns a greeting and uses world when the name is omitted.
+The public function is `createGreeting(name?: string): string`.
+Call `createGreeting("Eli")` to return `Hello, Eli!`. Call it with no name to return `Hello, world!`.
 
 ## Packaging
 
-The package allowlist is src/, docs/, README.md, AGENTS.md, LICENSE, RELEASE_NOTES.md, and examples/.
-
-Validate packed contents with npm run pack; the shared pack check must pass and the packed files must match the allowlist before release consideration.
-
-Public publication uses npm provenance and an exact version tag matching package.json after Ubuntu validation. Verify the exact version in the npm registry after an explicitly authorized publication handoff.
+The package allowlist is `src/`, `docs/`, `README.md`, `AGENTS.md`, `LICENSE`, `RELEASE_NOTES.md`, and `examples/`.
+Run `npm run pack` to check package contents. Publish only after approved release steps.
 
 ## Examples
 
-The runnable example and its prerequisites are indexed in [examples/README.md](examples/README.md). Start with the basic example, which uses no credentials or external services.
+Run `node examples/basic.mjs` to see the sample API. See [example guidance](examples/README.md).
 
 ## Support
 

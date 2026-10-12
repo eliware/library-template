@@ -1,7 +1,7 @@
-# Documentation
+# Library documentation
 
-This directory contains end-user guidance for @eliware/library-template.
+Use [usage guidance](usage.md) to install the package, import the API, and run the example.
 
-## Contents
+## Validation
 
-- [Usage guide](usage.md)
+Run `npm test` to check the package, API, and documentation.
