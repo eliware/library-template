@@ -65,7 +65,7 @@ Call `createGreeting("Eli")` to return `Hello, Eli!`. Call it with no name to re
 
 ## Packaging
 
-The package allowlist is `src/`, `docs/`, `README.md`, `AGENTS.md`, `LICENSE`, `RELEASE_NOTES.md`, and `examples/`.
+The package allowlist is `src/`, `docs/`, `README.md`, `AGENTS.md`, `LICENSE`, `RELEASE_NOTES.md`, `examples/`, and `specs/`.
 Run `npm run pack` to check package contents. Publish only after approved release steps.
 
 ## Examples
