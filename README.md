@@ -2,7 +2,7 @@
 
 ## @eliware/library-template [![npm](https://img.shields.io/npm/v/@eliware/library-template)](https://www.npmjs.com/package/@eliware/library-template) [![License](https://img.shields.io/github/license/eliware/library-template)](https://github.com/eliware/library-template/blob/main/LICENSE) [![CI](https://github.com/eliware/library-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliware/library-template/actions/workflows/ci.yaml)
 
-A reusable starting point for Eliware Node.js libraries using native ESM.
+A starting point for Eliware Node.js libraries that use native ESM.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ A reusable starting point for Eliware Node.js libraries using native ESM.
 
 ## Features
 
-This template provides a reusable starting point. Each derived repository owns its product behavior and operating decisions.
+This template starts Eliware Node.js libraries. Each derived library owns its behavior and operating decisions.
 
 ## Requirements
 
@@ -50,7 +50,7 @@ Run `npm test` before handoff. It runs the repository checks through `eliware-te
 ## Troubleshooting
 
 Install the required Node.js and npm versions. Run `npm ci` after dependency changes.
-Review the file and rule in any validation error.
+For each validation error, examine the named file and rule.
 
 ## Security
 
