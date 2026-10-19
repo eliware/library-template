@@ -2,6 +2,8 @@
 
 Use Node.js 26 or later and npm 12 or later. After npm publication, install the package with this command:
 
+> After you create a repository from this template, replace this document with end-user documentation for your repository.
+
 ```sh
 npm install @eliware/library-template
 ```
