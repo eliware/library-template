@@ -4,12 +4,14 @@ Purpose: the [basic.mjs](basic.mjs) example demonstrates the public createGreeti
 
 ## Prerequisites
 
-Use Node.js 26 in an ESM-capable project with @eliware/library-template installed.
+Use Node.js 26 or later in an ESM project.
+Install `@eliware/library-template` after it is published.
+To run the example before publication, use the repository root.
 
 ## Command
 
-node examples/basic.mjs
+Run `node examples/basic.mjs` from the repository root.
 
 ## Expected result
 
-The example prints Hello, Eli! and uses no credentials or external services.
+The example prints `Hello, Eli!`.

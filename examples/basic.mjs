@@ -1,3 +1,3 @@
-import { createGreeting } from "@eliware/library-template";
+import { createBasicExampleGreeting } from "../src/examples/basic.mjs";
 
-console.log(createGreeting("Eli"));
+console.log(createBasicExampleGreeting());

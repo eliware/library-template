@@ -1,5 +1,19 @@
 # Usage
 
-Install @eliware/library-template in a Node.js 26 project using npm install.
+Use Node.js 26 or later and npm 12 or later. After npm publication, install the package with this command:
 
-Import createGreeting from the package and call it with a name. The result is a greeting string. Omitting the optional name uses world.
+```sh
+npm install @eliware/library-template
+```
+
+Import `createGreeting` from `@eliware/library-template`. Pass a name to create a greeting.
+The function returns `Hello, <name>!`. If you omit the name, it returns `Hello, world!`.
+
+```js
+import { createGreeting } from "@eliware/library-template";
+
+console.log(createGreeting("Eli"));
+```
+
+Run the example from the repository root with `node examples/basic.mjs`.
+The example prints `Hello, Eli!`.
