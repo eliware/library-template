@@ -2,19 +2,13 @@
 
 ## Project
 
-See README.md for repository purpose, ownership, and scope.
-
 ## Scope and boundaries
 
 Keep requirements in their authoritative specifications.
 
 ## Layout
 
-Use README.md and specs/README.md to find maintained files.
-
 ## Development
-
-Give each source and test module one cohesive purpose.
 
 ## Validation
 
@@ -26,8 +20,6 @@ Run npm run format to format files.
 Run npm run format:check to check formatting.
 
 ## Security
-
-Keep credentials, secret values, private data, and runtime state out of Git.
 
 ## Changes
 

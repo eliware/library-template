@@ -23,45 +23,40 @@ A starting point for Eliware Node.js libraries that use native ESM.
 
 ## Features
 
-This template starts Eliware Node.js libraries. Each derived library owns its behavior and operating decisions.
-
 ## Requirements
 
-Use Node.js 26 or later and npm 12 or later for repository validation.
+Use Node.js 26 or later.
 
 ## Setup
 
-Create a repository from this template. Replace the template name, description, URLs, keywords, and sample content.
+Create a repository from this template. Replace the template identity, sample API, and package metadata.
 Run `npm ci` from the repository root.
 
 ## Usage
 
-Follow this README and the [user guide](docs/README.md). Read [release notes](RELEASE_NOTES.md) for release history.
+The template is not published to npm. Read the [user guide](docs/README.md) and [release notes](RELEASE_NOTES.md).
 
 ## Development
 
-Read [AGENTS.md](AGENTS.md) and [the specifications index](specs/README.md) before you change files.
-Keep documents and records in the repository that owns them.
+Read [the specifications index](specs/README.md) before you change files.
 
 ## Testing
 
-Run `npm test` before handoff. It runs the repository checks through `eliware-test`.
+Run `npm test` before handoff.
 
 ## Troubleshooting
 
 ## Security
 
-Keep credentials, secrets, private data, and runtime state out of Git.
-Use only approved secret stores for secret values.
-
 ## API
 
-The public function is `createGreeting(name?: string): string`.
-Call `createGreeting("Eli")` to return `Hello, Eli!`. Call it with no name to return `Hello, world!`.
+See the [API reference](docs/api.md) for the sample `createGreeting` function.
 
 ## Packaging
 
-The package allowlist is `src/`, `docs/`, `README.md`, `AGENTS.md`, `LICENSE`, `RELEASE_NOTES.md`, `examples/`, and `specs/`.
+The `files` field in `package.json` lists `src/`, `docs/`, `README.md`, `AGENTS.md`, `LICENSE`, `RELEASE_NOTES.md`, `examples/`, `specs/`, and `package.json` for npm packaging.
+Use numeric `MAJOR.MINOR.PATCH` versions. Use a `v<version>` tag for each release.
+The npm workflow starts when you push the tag.
 Run `npm run pack` to check package contents. Publish only after approved release steps.
 
 ## Examples
