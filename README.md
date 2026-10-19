@@ -23,6 +23,8 @@ A starting point for Eliware Node.js libraries that use native ESM.
 
 ## Features
 
+Start a Node.js library with a sample ESM API, TypeScript declarations, tests, and examples.
+
 ## Requirements
 
 Use Node.js 26 or later.
@@ -46,7 +48,13 @@ Run `npm test` before handoff.
 
 ## Troubleshooting
 
+If `npm ci` fails, confirm that Node.js 26 or later is installed and that the configured registry responds.
+If an import fails, check the package name and the `exports` field after you create your repository. See [usage guidance](docs/usage.md).
+
 ## Security
+
+Keep credentials, secret values, private data, and runtime state out of Git.
+Use an approved secret store to manage secret values.
 
 ## API
 

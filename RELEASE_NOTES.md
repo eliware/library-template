@@ -10,6 +10,7 @@
 - Add an API reference for the sample function, return values, and TypeScript declaration.
 - Add usage guidance for the local example and a derived library after publication.
 - Add troubleshooting guidance for unpublished packages and unresolved imports.
+- Complete the README sections for features, troubleshooting, and safe handling of credentials.
 
 ### Changed
 
