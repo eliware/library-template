@@ -1,18 +1,23 @@
 # Release Notes
 
-## 13.0.0 — 2026-10-17
+## 13.0.0 — 2026-10-19
 
 ### Added
 
+- Add a focused module for the basic example and a test for its output.
+- Add documentation that tells users to replace template content after they create a repository.
 - Add focused test guidance for library maintainers.
 
 ### Changed
 
 - Set the package version to 13.0.0 and align its description with the repository map.
-- Align README text with current language rules.
+- Align repository documentation and specifications with v13 conventions and current language rules.
+- Add package.json to the published package contents.
+- Update npm dependencies and upgrade @eliware/test to version 13.
 - Change the deployment command to use `git pull`.
 - Update CI to use checkout v7 and fetch the full Git history.
 - Replace the prior publication workflow with the canonical npm workflow.
+- Update the basic example to use its focused source module.
 
 ## 12.0.0 — 2026-10-12
 
