@@ -1,5 +1,12 @@
 # Release Notes
 
+## 14.0.0 — 2026-10-20
+
+### Changed
+
+- Align package metadata and repository directives with Eliware Test v14 conventions.
+- Complete required AGENTS.md guidance for repository scope, layout, development, safeguards, changes, library work, and npm publication.
+
 ## 13.0.0 — 2026-10-19
 
 ### Added
