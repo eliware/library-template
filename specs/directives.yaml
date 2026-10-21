@@ -1,4 +1,4 @@
-version: "14.0"
+version: "15.0"
 description: Local requirements for the Eliware library template.
 directives:
   - id: E-100.0

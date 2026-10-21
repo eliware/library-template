@@ -1,5 +1,12 @@
 # Release Notes
 
+## 15.0.0 — 2026-10-21
+
+### Changed
+
+- Align package metadata and repository directives with Eliware Test v15.
+- Upgrade `@eliware/test` to v15 and refresh transitive dependency versions.
+
 ## 14.0.0 — 2026-10-20
 
 ### Changed
