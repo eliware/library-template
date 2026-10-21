@@ -6,6 +6,11 @@
 
 - Align package metadata and repository directives with Eliware Test v14 conventions.
 - Complete required AGENTS.md guidance for repository scope, layout, development, safeguards, changes, library work, and npm publication.
+- Upgrade `@eliware/test` to 14.0.0 and refresh the locked dependencies.
+- Expand the usage guide with derived-library setup, validation, npm publishing, and troubleshooting steps.
+- Document the sample API default, return value, string handling, and TypeScript declaration.
+- State that the template package is not published and that derived projects must replace template documentation and examples.
+- Remove unsupported secret-store guidance from README.md and clarify the specifications link.
 
 ## 13.0.0 — 2026-10-19
 
