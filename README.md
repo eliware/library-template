@@ -40,7 +40,7 @@ The template is not published to npm. Read the [user guide](docs/README.md) and 
 
 ## Development
 
-Read [the specifications index](specs/README.md) before you change files.
+See [the specifications index](specs/README.md) for repository requirements.
 
 ## Testing
 
@@ -54,7 +54,6 @@ If an import fails, check the package name and the `exports` field after you cre
 ## Security
 
 Keep credentials, secret values, private data, and runtime state out of Git.
-Use an approved secret store to manage secret values.
 
 ## API
 
