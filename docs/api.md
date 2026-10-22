@@ -27,6 +27,7 @@ import { createGreeting } from "@your-scope/your-library";
 createGreeting("Eli"); // "Hello, Eli!"
 createGreeting(); // "Hello, world!"
 createGreeting(""); // "Hello, !"
+createGreeting(" Eli "); // "Hello,  Eli !"
 ```
 
 Replace the example package name with the name in the derived library's `package.json`.
