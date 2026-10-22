@@ -32,7 +32,7 @@ Use Node.js 26 or later.
 ## Setup
 
 Create a repository from this template. Replace the template identity, sample API, and package metadata.
-Run `npm ci` from the repository root.
+See [setup guidance](docs/usage.md) for the steps.
 
 ## Usage
 
@@ -40,7 +40,7 @@ The template is not published to npm. Read the [user guide](docs/README.md) and 
 
 ## Development
 
-See [the specifications index](specs/README.md) for repository requirements.
+Read [AGENTS.md](AGENTS.md) before you change files. See [the specifications index](specs/README.md) for repository requirements.
 
 ## Testing
 
@@ -48,8 +48,7 @@ Run `npm test` before handoff.
 
 ## Troubleshooting
 
-If `npm ci` fails, confirm that Node.js 26 or later is installed and that the configured registry responds.
-If an import fails, check the package name and the `exports` field after you create your repository. See [usage guidance](docs/usage.md).
+See [usage guidance](docs/usage.md) for installation, import, and publishing problems.
 
 ## Security
 
@@ -61,14 +60,11 @@ See the [API reference](docs/api.md) for the sample `createGreeting` function.
 
 ## Packaging
 
-The `files` field in `package.json` lists `src/`, `docs/`, `README.md`, `AGENTS.md`, `LICENSE`, `RELEASE_NOTES.md`, `examples/`, `specs/`, and `package.json` for npm packaging.
-Use numeric `MAJOR.MINOR.PATCH` versions. Use a `v<version>` tag for each release.
-The npm workflow starts when you push the tag.
-Run `npm run pack` to check package contents. Publish only after approved release steps.
+See [usage guidance](docs/usage.md) for package contents, versioning, and publication steps.
 
 ## Examples
 
-Run `node examples/basic.mjs` to see the sample API. See [example guidance](examples/README.md).
+See [example guidance](examples/README.md) for prerequisites, commands, and expected output.
 
 ## Support
 

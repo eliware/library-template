@@ -25,6 +25,8 @@ Run npm run audit for dependency checks.
 Run npm run format to format files.
 Run npm run format:check to check formatting.
 
+Run npm run typecheck to check the TypeScript declaration.
+
 ## Security
 
 Keep credentials, secret values, private data, and runtime state out of Git.
@@ -43,4 +45,4 @@ Run the full `npm test` suite for final validation before a commit, milestone, o
 
 ## npm publication
 
-Run `npm run pack` to check package contents. Publish only after approved release steps.
+Run `npm run pack` to check package contents. Follow approved release steps before publication.
