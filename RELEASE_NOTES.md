@@ -1,5 +1,11 @@
 # Release Notes
 
+## 15.0.1 — 2026-10-26
+
+### Changed
+
+- Upgrade `@eliware/test` to 15.0.1 and refresh the locked dependencies.
+
 ## 15.0.0 — 2026-10-22
 
 ### Added

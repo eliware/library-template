@@ -1,6 +1,6 @@
 {
   "name": "@eliware/library-template",
-  "version": "15.0.0",
+  "version": "15.0.1",
   "type": "module",
   "description": "A starting point for Eliware Node.js libraries that use native ESM.",
   "keywords": [
